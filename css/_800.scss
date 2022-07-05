@@ -1,0 +1,38 @@
+@media(max-width: 1280px){
+    .main-paddons{
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 50px 50% 1fr;
+        grid-template-areas: "title1" "title2" "info" "pict";
+    }
+    .block-img{
+        display: flex;
+        align-items: center;
+        div{
+            padding: 10px;
+        }
+    }
+    .icon-mess{
+        z-index: 1;
+    }
+    .contact{
+        text-align: center;
+    }
+    .main-block_video{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 800px){
+    .block-text{
+        width: 394px;
+    }
+    .block-img{
+        width: 92%;
+        div{
+            padding: 5px;
+        }
+    }
+    .main-block_info{
+        grid-template-columns: 15rem 1fr;
+    }
+}

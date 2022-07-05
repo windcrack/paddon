@@ -1,0 +1,198 @@
+@media screen and (max-width: 414px){
+    header{
+        flex-direction: column;
+    }
+
+    .nav-butt{
+        overflow-y: scroll;
+        padding-block-end: 12px;
+        margin-block-end: -12px;
+    }
+
+    .contact{
+        width: 100%;
+        .showMeTheMap{
+            margin: 12px 12px 0;
+        }
+    }
+
+    .header-list_text{
+        padding-left: 12px;
+    }
+
+    .content{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .main-block{
+        grid-template-columns: 1fr;
+        grid-template-areas: "text" "video" "img";
+    }
+    .main-block_mainText{
+        width: 100%;
+    }
+    .main-block_video{
+        width: 100%;
+        margin: 24px auto 24px;
+    }
+    .main-block_slider, .block-img{
+        margin: auto;
+        div{
+            margin: 0px 0px 12px;            
+        }
+        img{
+            margin: auto;
+        }
+    }
+    .slick-slide{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-paddons{
+        grid-template-areas: "title1" "title2" "info" "pict";
+        grid-template-rows: auto;
+        h1, h2 {
+            margin: 0;
+            padding: 12px 0 ;
+        }
+    }
+
+    .main-block_info{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "img" "text" "files";
+        margin-left: 0;
+        padding: 0;
+        img{
+            margin: auto;
+        }
+    }
+
+    .block-text{
+        margin: 12px 0;
+        width: auto;
+        
+        .title{
+            font-size: 22px;
+        }
+    }
+
+    .border{
+        flex-direction: column;
+        .subTitle-list:nth-child(1){
+            margin: 0 0 12px;
+        }
+    }
+    .block-files{
+        flex-direction: row;
+        margin-left: 0;
+        div{
+            padding-right: 12px;
+        }
+    }
+
+    footer{
+        flex-direction: column;
+        color: #fff;
+        p{
+            text-align: center;
+            padding: 12px;
+        }
+    }
+    .footer-partners{
+        margin-top: 12px;
+        img{
+            width: 25px;
+        }
+    }
+    .send-form{
+        width: 340px;
+        z-index: 11;
+        position: relative;
+    }
+    .icon-mess{
+        bottom: 10px;
+        right: 42%;
+    }
+    .main-paddons_category{
+        .subTitle_main{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "img" "headerText";
+            align-items: center;
+            .img-block{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .title{
+                text-align: center;
+            }
+            .listBlock-text{
+                width: 100%;
+            }
+        }
+        ul{
+            li:last-child{
+                .title{
+                    text-align: center;
+                }
+                .subTitle_main-last{
+                    grid-template-columns: auto;
+                    .img-block{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .listBlock-text{
+            padding-inline-start: 0;
+            padding-block-start: 12px;
+        }
+        .block-imgFiles{
+            flex-direction: column;
+            .block-files{
+                transform: translate(0);
+                margin-inline-start: 0;
+            }
+        }
+        
+    }
+    
+
+    .nastil-transport_block:last-child{
+        width: auto;
+    }
+    .nastil-info, .nastil-img_block, .nastil-transport{
+        flex-direction: column;
+    }
+    .nastil-info_block{
+        margin-inline-start: 0;
+    }
+    .main-wood_nastil{
+        p{
+            text-align: justify;
+        }
+    }
+    .mapShow{
+        display: none;
+    }
+}
+
+@media (max-width: 320px){
+    .block-img{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
+    .main-block_info{
+        margin-left: 22px;
+    }
+    .block-files{
+        flex-direction: column;
+    }
+}
